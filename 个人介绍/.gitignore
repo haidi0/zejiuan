@@ -1,0 +1,4 @@
+*.docx
+*.pptx
+*.pdf
+node_modules/
