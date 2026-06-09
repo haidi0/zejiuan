@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泽久安 - 个人介绍</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Playfair+Display:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面加载动画 -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-text">泽久安</div>
+            <div class="loader-subtitle">久长时舟自横野</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 滚动进度条 -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- 浮动装饰元素 -->
+    <div class="floating-decor">
+        <span class="float-item leaf-1">🍃</span>
+        <span class="float-item leaf-2">🌿</span>
+        <span class="float-item flower-1">🌸</span>
+        <span class="float-item flower-2">✿</span>
+        <span class="float-item dot-1"></span>
+        <span class="float-item dot-2"></span>
+        <span class="float-item dot-3"></span>
+    </div>
+    <!-- Hero区域 -->
+    <section class="hero">
+        <div class="wave-bg"></div>
+        <div class="hero-content">
+            <div class="avatar-container">
+                <img src="images/IMG_20260413_212741.png" alt="龙凯威" class="avatar">
+            </div>
+            <h1 class="hero-title">
+                <span class="greeting">你好，我是</span>
+                <span class="name">龙凯威</span>
+            </h1>
+            <p class="hero-subtitle" id="typing-text"></p>
+            <div class="hero-tags">
+                <span class="tag">巨蟹座 🦀</span>
+                <span class="tag">INTJ 建筑师</span>
+                <span class="tag">网络与新媒体</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滑动</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- 网络IP - 泽久安 -->
+    <section class="ip-section" id="ip">
+        <div class="container">
+            <div class="ip-content">
+                <div class="ip-main">
+                    <div class="ip-badge">Network IP</div>
+                    <h2 class="ip-name">泽久安</h2>
+                    <div class="ip-aliases">
+                        <span class="alias">安久泽</span>
+                        <span class="alias-dot">·</span>
+                        <span class="alias">一安一泽</span>
+                        <span class="alias-dot">·</span>
+                        <span class="alias">泽小安</span>
+                    </div>
+                </div>
+                <div class="ip-poem">
+                    <p class="poem-line">久长时舟自横野</p>
+                    <p class="poem-line">泽自安风过如初</p>
+                </div>
+                <div class="ip-meaning">
+                    <p>在网络世界里，我叫<strong>泽久安</strong>。</p>
+                    <p>这个名字承载着我对长久安定的向往，</p>
+                    <p>也寄托着"风过如初"的淡然与从容。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-grid">
+                <div class="about-card main-info">
+                    <div class="info-item">
+                        <span class="label">姓名</span>
+                        <span class="value">龙凯威</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">学校</span>
+                        <span class="value">广东技术师范大学</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">专业</span>
+                        <span class="value">网络与新媒体</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">年级</span>
+                        <span class="value">大一 → 大二</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">绩点</span>
+                        <span class="value counter" data-target="3.9">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">年龄</span>
+                        <span class="value counter" data-target="18">0</span>
+                    </div>
+                </div>
+                <div class="about-card zodiac-card">
+                    <h3>星座分布</h3>
+                    <div class="zodiac-bars">
+                        <div class="bar-item">
+                            <span class="bar-label">巨蟹座</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-width="30"></div>
+                            </div>
+                            <span class="bar-value">30%</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">射手座</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-width="33"></div>
+                            </div>
+                            <span class="bar-value">33%</span>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">天秤座</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-width="20"></div>
+                            </div>
+                            <span class="bar-value">20%</span>
+                        </div>
+                    </div>
+                    <div class="zodiac-summary">
+                        <span>火象星座 50%</span>
+                        <span>变动星座 41.67%</span>
+                    </div>
+                </div>
+                <div class="about-card mbti-card">
+                    <h3>MBTI 人格</h3>
+                    <div class="mbti-display">
+                        <div class="mbti-letter">I</div>
+                        <div class="mbti-letter">N</div>
+                        <div class="mbti-letter">T</div>
+                        <div class="mbti-letter">J</div>
+                    </div>
+                    <p class="mbti-desc">内向 36% · 直觉 8% · 思考 16% · 判断 16%</p>
+                    <p class="mbti-meaning">保留了ENFJ的热情社交 + 发展了深度思考能力</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 性格世界 -->
+    <section class="personality" id="personality">
+        <div class="container">
+            <h2 class="section-title">我的内在世界</h2>
+            <div class="tabs">
+                <button class="tab active" data-tab="cancer">🦀 太阳巨蟹</button>
+                <button class="tab" data-tab="libra">🌙 月亮天秤</button>
+                <button class="tab" data-tab="sagittarius">🏹 上升射手</button>
+            </div>
+            <div class="tab-content active" id="cancer">
+                <div class="personality-card">
+                    <h3>深刻联结 · 安全感</h3>
+                    <p>我需要<strong>深刻的联结</strong>和<strong>真正的安全感</strong>。</p>
+                    <p>不是短暂的陪伴，而是一个可以安心脱掉外壳的"家"。</p>
+                    <p>我渴望一份<strong>可以引导我、也愿意被我依赖</strong>的稳定关系。</p>
+                </div>
+            </div>
+            <div class="tab-content" id="libra">
+                <div class="personality-card">
+                    <h3>和谐追求 · 归属感</h3>
+                    <p>我追求和谐，害怕冲突，会为了关系的平衡而默默付出。</p>
+                    <p>我很在意<strong>群体与归属</strong>——</p>
+                    <p>那些深夜的思考、关于圈子的困惑、对"精神价值"的执着，都从这里来。</p>
+                </div>
+            </div>
+            <div class="tab-content" id="sagittarius">
+                <div class="personality-card">
+                    <h3>热情开朗 · 爱探索</h3>
+                    <p>对外，我是<strong>热情、开朗、爱探索</strong>的人。</p>
+                    <p>我喜欢学新东西（MBTI、占星、心理学），</p>
+                    <p>也喜欢把复杂的感受写成文字、做成梦的分析。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价值观与故事 -->
+    <section class="values" id="values">
+        <div class="container">
+            <h2 class="section-title">价值观与故事</h2>
+            <div class="values-content">
+                <div class="value-ranking">
+                    <h3>我的价值排序</h3>
+                    <div class="rank-list">
+                        <div class="rank-item">
+                            <span class="rank-number">1</span>
+                            <span class="rank-text">精神价值 —— 思想、见识、深度对话</span>
+                        </div>
+                        <div class="rank-item">
+                            <span class="rank-number">2</span>
+                            <span class="rank-text">物质价值 —— 稳定、可靠、能一起生活</span>
+                        </div>
+                        <div class="rank-item">
+                            <span class="rank-number">3</span>
+                            <span class="rank-text">外形、情绪价值 … 其次</span>
+                        </div>
+                    </div>
+                    <p class="value-quote">我要的不是"好看的脸"或"短暂的激情"，而是一个<strong>精神上能共鸣、生活上能并肩</strong>的人。</p>
+                </div>
+                <div class="brave-story">
+                    <h3>我做过最勇敢的事</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2026.3.16</div>
+                            <div class="timeline-content">
+                                <p>做了一个梦——梦见自己没驾照却开车去上海找他，剐蹭、大雨、借外卖小哥的电话……</p>
+                                <p>梦里我在电话里说了"我们别联系了"。</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">8天后</div>
+                            <div class="timeline-content">
+                                <p>我把梦里的告别，<strong>在现实中执行了</strong>。</p>
+                                <blockquote>"还记得我和你说的那个梦吗？我骗了你，我的心告诉我应该放手了。从此别过，祝你幸福。"</blockquote>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">现在</div>
+                            <div class="timeline-content">
+                                <p>—— 我主动结束了持续一年多的网恋。</p>
+                                <p>不是不爱了，而是<strong>价值排序不匹配</strong>。</p>
+                                <p>我依然善良，但不再透支自己。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 形象照片墙 -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <!-- AI虚拟形象 -->
+            <h2 class="section-title">虚拟形象</h2>
+            <p class="section-subtitle">我在网络世界的另一个自己</p>
+            <div class="gallery-grid virtual">
+                <div class="gallery-item large">
+                    <img src="images/IMG_20260413_212741.png" alt="AI形象1">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">自在</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20260413_220843.png" alt="AI形象2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">小安来啦</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20260413_235245.png" alt="AI形象3">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">温暖</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20260414_001403.png" alt="AI形象4">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">少年</span>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="images/IMG_20260414_001445.png" alt="AI形象5">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">泽久安</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 实拍形象 -->
+            <h2 class="section-title real-title">真实掠影</h2>
+            <p class="section-subtitle">生活中的每个瞬间</p>
+            <div class="gallery-grid real">
+                <div class="gallery-item large">
+                    <img src="images/MVIMG_20260609_155651.jpg" alt="实拍1">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">此刻</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/1780991902151.jpg" alt="实拍2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">日常</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mmexport1766909831978.jpg" alt="实拍3">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">记录</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/1780992128875.jpg" alt="实拍4">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">瞬间</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业技能 -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">专业技能</h2>
+            <div class="skills-content">
+                <div class="radar-container">
+                    <svg class="radar-chart" viewBox="0 0 400 400">
+                        <!-- 雷达图将通过JS动态生成 -->
+                    </svg>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-icon">✍️</div>
+                        <div class="skill-info">
+                            <h4>内容创作</h4>
+                            <p>文案撰写、脚本策划、短视频剪辑</p>
+                            <span class="skill-level">熟练</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🤖</div>
+                        <div class="skill-info">
+                            <h4>AI工具</h4>
+                            <p>ChatGPT、Midjourney、剪映AI</p>
+                            <span class="skill-level">入门</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-info">
+                            <h4>平台运营</h4>
+                            <p>抖音、小红书运营逻辑</p>
+                            <span class="skill-level">实战经验</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📈</div>
+                        <div class="skill-info">
+                            <h4>数据分析</h4>
+                            <p>Excel、平台后台数据</p>
+                            <span class="skill-level">计划学习</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🤝</div>
+                        <div class="skill-info">
+                            <h4>沟通协调</h4>
+                            <p>学生工作、团队协作</p>
+                            <span class="skill-level">擅长</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 自媒体矩阵 -->
+    <section class="social" id="social">
+        <div class="container">
+            <h2 class="section-title">自媒体矩阵</h2>
+            <p class="section-subtitle">从0到1完成账号定位、内容策划、拍摄剪辑</p>
+            <div class="social-grid">
+                <div class="social-card personal">
+                    <div class="card-header">
+                        <span class="card-icon">👤</span>
+                        <h3>主账号</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-position">温暖真实的大学生活记录</p>
+                        <div class="card-details">
+                            <span>情感vlog + 口播</span>
+                            <span>每周2条</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-card knowledge">
+                    <div class="card-header">
+                        <span class="card-icon">📚</span>
+                        <h3>知识干货号</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-position">大学生学业/职场规划方法</p>
+                        <div class="card-details">
+                            <span>图文 + 偶尔口播</span>
+                            <span>每周1条</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-card asmr">
+                    <div class="card-header">
+                        <span class="card-icon">🎧</span>
+                        <h3>ASMR语音情感号</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-position">治愈系声音树洞</p>
+                        <div class="card-details">
+                            <span>耳语独白 + 第一视角ASMR</span>
+                            <span>每周2-3条</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-card shop">
+                    <div class="card-header">
+                        <span class="card-icon">🛍️</span>
+                        <h3>独立带货号</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-position">好物测评/宿舍神器</p>
+                        <div class="card-details">
+                            <span>第一视角开箱 + 痛点展示</span>
+                            <span>每周3-5条</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-quote">
+                    "久长时舟自横野，泽自安风过如初。"
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:haididehaidi0@outlook.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        <span>haididehaidi0@outlook.com</span>
+                    </a>
+                    <a href="mailto:zejiuan011@gmail.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        <span>zejiuan011@gmail.com</span>
+                    </a>
+                </div>
+                <div class="footer-cards">
+                    <div class="namecard">
+                        <div class="namecard-wrapper">
+                            <img src="images/微信个人名片.png" alt="微信名片" class="namecard-img">
+                        </div>
+                        <span class="namecard-label">微信</span>
+                    </div>
+                    <div class="namecard">
+                        <div class="namecard-wrapper">
+                            <img src="images/抖音个人名片.png" alt="抖音名片" class="namecard-img">
+                        </div>
+                        <span class="namecard-label">抖音</span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 泽久安 · 用代码编织梦想</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
